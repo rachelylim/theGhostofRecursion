@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get '/' => 'index'
+  root 'index#index'
 
   resources :user, only: [:new, :create]
 
