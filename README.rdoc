@@ -1,5 +1,7 @@
 == README
 
+This app was created by Rachel Lim and Jonathan Star to explore scheduling and emailing APIs. Come join the Ghosts of Recursion and haunt a developer of your choice.
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
