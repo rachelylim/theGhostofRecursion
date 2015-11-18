@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TheGhostofRecursion</title>
+  <title>The Ghost of Recursion</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<% if logged in? %>
-  <span>Welcome, <%= current_user.name %>!</span>
-  <span><= link_to 'Log Out', logout_path %></span>
-<% else %>
-  <span><%= link_to 'Register', register_path %></span>
-  <span><%= link_to 'Log In', login_path %></span>
-<% end %>
 
 <%= yield %>
 
