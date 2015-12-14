@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'index#index'
+  root 'victims#new'
 
   resources :victims, only: [:new, :create]
   
