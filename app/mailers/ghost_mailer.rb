@@ -1,0 +1,2 @@
+class GhostMailer < ApplicationMailer
+end
