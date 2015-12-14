@@ -1,2 +1,0 @@
-class GhostMailer < ApplicationMailer
-end
