@@ -1,5 +1,5 @@
 class VictimMailer < ApplicationMailer
-   default from: 'theGhostofRecursion@thedarkside.com'
+   default from: 'theGhostofRecursion@gmail.com'
 
    def cursed_email(victim)
     @victim = victim

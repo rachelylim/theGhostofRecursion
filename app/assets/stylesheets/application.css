@@ -14,6 +14,54 @@
  *= require_self
  */
 
-div {
+ *{
+  text-decoration: none;
+  outline: none
+ }
+
+
+.container {
+  margin: 0 auto;
+  margin-top: 10%;
+  text-align: center;
+  border: black solid;
+  border-radius: 25px;
+  width: 50%;
+  height: 300px;
+}
+
+.button {
   margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: pink;
+  border: 0 none;
+  border-radius: 36px;
+  
+  padding: 5px 10px;
+  /*margin: 0 10px;*/
+  
+  cursor: pointer;
+  display: inline-block;
+  
+  font-size: 14px;
+  color: #fff;
+  text-transform: none; 
+}
+
+.text-field {
+  margin-top: 10px;
+  background:  url(rounded.gif) no-repeat left top;
+  padding: 8px;
+  border: none;
+  border-radius: 25px;
+  background: lightgrey;
+  width: 165px;
+}
+
+h4 {
+  margin-top: 20px;
+}
+
+h2 {
+  padding: 10px;
 }
