@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   root 'victims#new'
 
   resources :victims, only: [:new, :create]
+
+  get 'success' => 'victims#success'
+  get 'fail' => 'victims#fail'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

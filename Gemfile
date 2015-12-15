@@ -32,6 +32,9 @@ gem 'byebug'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Send email via localhost
+gem 'mailcatcher'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry-rails'
