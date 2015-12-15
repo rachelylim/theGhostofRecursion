@@ -5,6 +5,6 @@ class VictimMailer < ApplicationMailer
     @victim = victim
     # @url = "http://localhost.com:3000/victims/new_victim"
 
-    mail (to: @victim.email, subject: "You've Been Recursed!")
+    mail(to: @victim.email, subject: "You've Been Recursed!")
    end
 end

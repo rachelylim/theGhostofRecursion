@@ -7,17 +7,19 @@ class VictimsController < ApplicationController
   def create
     @victim = Victim.new(victim_params)
 
-    respond_to do |f|
+    # respond_to do |f|
       if @victim.save
-        VictimMailer.cursed_email(@victim).deliver
+        VictimMailer.cursed_email(@victim).deliver_now
+        # byebug
 
-        redirect_to "index/success"
-        format.html { redirect_to(@victim, notice: 'Victim was successfully cursed.') }
-        format.json { render json: @victim, status: :created, location: @victim }
+        @success = "You've successfull cursed, #{@victim.name}"
+        redirect_to root_path
+        # format.html { redirect_to(@victim, notice: 'Victim was successfully cursed.') }
+        # format.json { render json: @victim, status: :created, location: @victim }
       else
         @error = "Something went wrong...You are not qualified to be The Ghost of Recursion."
       end
-    end
+    # end
   end
 
   private
