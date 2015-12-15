@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1><%= @victim.name %>, You've Been Recursed!</h1>
+    <p>
+      <% 100.times do %>
+        <p>Recursion!</p>
+      <% end %>
+    </p>
+    <br />
+    <p>
+      Base case.
+    </p>
+    <p>Regards,</p>
+    <p>The Ghost of Recursion</p>
+  </body>
+</html>

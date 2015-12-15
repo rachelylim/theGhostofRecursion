@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  root 'index#index'
+  root 'victims#new'
 
-  resources :user, only: [:new, :create]
+  resources :victims, only: [:new, :create]
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
